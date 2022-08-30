@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --primaryfont: 'Poppins';
+}
+    
+    * {
+
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+
+
+}
+    body{
+        
+       
+    }
+
+    .head{
+        background-color: #357178;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .head h3{
+        width: 30%;
+        text-align: center;
+        color: white;
+        font-family: var(--primaryfont);
+   
+    }
+
+    .main-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+    }
+
+    .test{
+        width: 50%;
+        margin-top: 100px;
+    }
+    .test h3{
+        text-align: center;
+        font-family: var(--primaryfont);
+        color: orange;
+        margin-bottom: 100px;
+    }
+    em{
+        font-family: var(--primaryfont);
+        
+        
+
+    }
+    .after-signing{
+        font-weight: bolder;
+        font-family: var(--primaryfont);
+        margin-top: 30px;
+    }
+  
+    ul li{
+        width: 90%;
+    }
+
+    ul li h4{
+        font-weight: bolder;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        gap: 20px;
+        font-family: var(--primaryfont);
+        
+    }
+
+    .read-more{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .read-more-btn{
+        background-color: #357178;
+        padding: 10px 30px;
+        border: 0;
+        border-radius: 5px;
+     
+    }
+
+    .read-more-btn a{
+        text-decoration: none;
+        color: white;
+        font-family: var(--primaryfont);
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .get-bafana{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        
+    }
+    .get-bafana p{
+        font-family: var(--primaryfont);
+        width: 90%;
+        font-size: 13px;
+        text-align: center;
+
+    }
+
+    .download{
+        display: flex;
+     
+        padding: 0;
+        margin: 0;
+        
+    }
+    .download a img{
+        width: 200px;
+    
+  
+    }
+    hr{
+        width: 100%;
+        color: #357178;
+        height: 1px;
+       
+    }
+
+    .footer{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .socials img{
+        width: 40px;
+    }
+    .footer p{
+        text-align: center;
+        font-family: var(--primaryfont);
+        font-size: 13px;
+        font-weight: bold;
+    }
+   .email-sent-to{
+    width:61%;
+    font-weight: bold;
+    gap: 15px;
+  
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+   }
+
+
+   @media (min-width: 320px) and (max-width: 480px){
+    .head h3{
+        width: 90%;
+        font-size: 15px;
+    }
+
+    
+    .test{
+        width: 80%;
+        margin-top: 60px
+    }
+    .test h3{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .test p{
+        font-size: 12px;
+    }
+
+   
+
+    ul li h4{
+        font-weight: bolder;
+      
+        font-size: 13px;
+    }
+    .read-more{
+        margin-top: 30px;
+        width: 80%;
+    }
+    .read-more-btn a{
+      
+        font-size: 15px;
+    }
+    .get-bafana{
+        width: 90%;
+    }
+    .download{
+        width: 90%;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .download a img{
+        width: 150px;
+    }
+    .email-sent-to{
+        width: 90%;
+    }
+    .footer{
+        width: 100%;
+    }
+
+
+    
+   }
+
+
+   @media (min-width: 481px) and (max-width: 768px){
+    .head h3{
+        width: 80%;
+        font-size: 18px;
+    }
+
+    
+    .test{
+        width: 80%;
+        margin-top: 60px
+    }
+    .test h3{
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+   
+
+    ul li h4{
+        font-weight: bolder;
+        
+        font-size: 15px;
+    }
+    .read-more{
+        margin-top: 30px;
+        width: 80%;
+    }
+    .read-more-btn a{
+      
+        font-size: 18px;
+    }
+    .get-bafana{
+        width: 90%;
+    }
+    .download{
+        width: 90%;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .download a img{
+        width: 170px;
+    }
+    .email-sent-to{
+        width: 70%;
+    }
+    .footer p{
+        width: 80%;
+    }
+    .footer{
+        width: 100%;
+    }
+
+
+    
+   }
+
+   @media (min-width: 769px) and (max-width: 1024px){
+    .head h3{
+        width: 80%;
+        font-size: 25px;
+       
+    }
+
+    
+    .test{
+        width: 80%;
+        margin-top: 60px
+    }
+    .test h3{
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    .test p{
+        font-size: 18px;
+    }
+
+   
+
+    ul li h4{
+        font-weight: bolder;
+       
+        font-size: 20px;
+    }
+    .read-more{
+        margin-top: 30px;
+        width: 80%;
+    }
+    .read-more-btn a{
+      
+        font-size: 25px;
+    }
+    .get-bafana{
+        width: 90%;
+    }
+    .get-bafana p{
+        font-size: 18px;
+    }
+    .download{
+        width: 90%;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .download a img{
+        width: 180px;
+    }
+    .email-sent-to{
+        width: 70%;
+    }
+    .socials a img{
+        width: 6.5vw;
+
+    }
+    .footer p{
+        width: 90%;
+        font-size: 15px;
+    }
+    .footer{
+        width: 100%;
+    }
+
+
+    
+   }
+
+   @media (min-width: 1025px) and (max-width: 1200px){
+    .head h3{
+        width: 80%;
+        font-size: 32px;
+        
+    }
+
+    
+    .test{
+        width: 80%;
+        margin-top: 100px
+    }
+    .test h3{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .test p{
+        font-size: 22px;
+    }
+
+   
+
+    ul li h4{
+        font-weight: bolder;
+       
+        font-size: 25px;
+    }
+    .read-more{
+        margin-top: 40px;
+        width: 80%;
+    }
+    .read-more-btn{
+        width: 250px;
+        height: 70px;
+    }
+    .read-more-btn a{
+      
+        font-size:30px;
+       
+    }
+    .get-bafana{
+        width: 90%;
+    }
+    .get-bafana p{
+        font-size: 20px;
+    }
+    .download{
+        width: 90%;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .download a img{
+        width: 250px;
+    }
+    .email-sent-to{
+        width: 70%;
+    }
+    .socials a img{
+        width: 7vw;
+    }
+    .footer p{
+        width: 90%;
+        font-size: 20px;
+    }
+    .footer{
+        width: 100%;
+    }
+
+
+    
+   }
+
+    
+
+
+
+</style>
+
+<body>
+    <section>
+
+
+        <div class="head">
+            <img src="" alt="">
+            <h3>Gift of the day?: Best Practices
+                for YouTubers on Bafana</h3>
+        </div>
+
+        <div class="main-body">
+
+       
+
+        <div class="test">
+            <h3>Hello there,[Ish Kevin]!</h3>
+
+            <p> <em> Bafana.io, the "Patreon" of Africa, is providing tools that make it easy for
+                more than 1000 African artists and creatives with a YouTube channels in
+                Kenya, Nigeria, Uganda, Ghana, and Rwanda, to build successful YouTube
+                
+                channels.</em></p>
+                <p class="after-signing">After signing up on Bafana.io, you will be given a page where you can:</p>
+            <ul>
+                <li>
+                    <p>Collect payments directly from your home country and beyond. From
+                        tips for your content to donations for your projects, let your audience
+                        support your channel. (Bafana.io accepts MPesa, MTN, and Airtel
+                        mobile money, Visa, and MasterCard payments.)</p>
+                </li>
+              
+            </ul>
+        </div>
+
+        <div class="read-more">
+            <button class="read-more-btn"> <a href="">Read more</a> </button>
+        </div>
+
+
+        <div class="get-bafana">
+            <p>The bafana mobile app is built to give you a super-smooth experience. Download the
+                app from your app store or play store and leave a 5-star rating to help others find it.</p>
+
+            <div class="download">
+                <a href="#"><img src="./assets/googleaccess.png" alt=""></a>
+               
+            </div>
+            <hr>
+
+        </div>
+
+
+        <div class="footer">
+            <div class="socials">
+            <a href="#"><img src="./assets/tiktok.png" alt=""></a>
+            <a href="#"> <img src="./assets/tsap.png" alt=""></a>
+            <a href="#"><img src="./assets/fb.png" alt=""></a>
+            <a href="#"><img src="./assets/insta.png" alt=""></a>
+            <a href="#"><img src="./assets/twitter.png" alt=""></a>
+            <a href="#"><img src="./assets/youtube.png" alt=""></a>
+        </div>
+
+        <div  class="email-sent-to">
+            <p>This email was sent to [imuraganwa@gmail.com] by bafana.io
+                For any inquiries, please write to <a href="mailto:team@bafana.io"> team@bafana.io</a></p>
+                <p>© 2022 invicta ea ltd.</p>
+        </div>
+
+          
+            
+
+            <p>No longer want to receive these emails? Click here to Unsubscribe</p>
+        </div>
+    </div>
+    </section>
+</body>
+
+</html>
